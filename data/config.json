@@ -1,0 +1,179 @@
+{
+  "port": 4173,
+  "topic": "台灣即時新聞",
+  "language": "zh-TW",
+  "socialPlatforms": [
+    "Facebook",
+    "Threads",
+    "IG",
+    "YouTube"
+  ],
+  "focusCategories": [
+    "社會突發",
+    "政治兩岸",
+    "生活健康",
+    "娛樂社群",
+    "地方新聞"
+  ],
+  "thresholds": {
+    "high": 75,
+    "watch": 50
+  },
+  "keywords": [
+    "快訊",
+    "即時",
+    "突發",
+    "獨家",
+    "地震",
+    "颱風",
+    "豪雨",
+    "大雨",
+    "停班停課",
+    "火災",
+    "爆炸",
+    "槍擊",
+    "命案",
+    "車禍",
+    "事故",
+    "食安",
+    "詐騙",
+    "疫情",
+    "災情",
+    "警",
+    "檢",
+    "立法院",
+    "行政院",
+    "總統",
+    "選舉",
+    "罷免",
+    "台積電",
+    "台股",
+    "中國",
+    "兩岸",
+    "美國",
+    "國際",
+    "地方",
+    "縣市",
+    "健康",
+    "醫師",
+    "醫院",
+    "藝人",
+    "網紅",
+    "社群",
+    "炎上",
+    "道歉"
+  ],
+  "sources": [
+    {
+      "id": "cna-realtime",
+      "name": "中央社即時",
+      "homepage": "https://www.cna.com.tw/list/aall.aspx",
+      "officialWeight": 40
+    },
+    {
+      "id": "ltn-realtime",
+      "name": "自由時報即時",
+      "homepage": "https://news.ltn.com.tw/list/breakingnews",
+      "feedUrl": "https://news.ltn.com.tw/rss/all.xml",
+      "officialWeight": 40
+    },
+    {
+      "id": "udn-realtime",
+      "name": "聯合新聞網即時",
+      "homepage": "https://udn.com/news/breaknews/1",
+      "feedUrl": "https://udn.com/rssfeed/news/2/6638?ch=news",
+      "officialWeight": 40
+    },
+    {
+      "id": "ettoday-realtime",
+      "name": "ETtoday 即時",
+      "homepage": "https://www.ettoday.net/news/news-list.htm",
+      "feedUrl": "https://feeds.feedburner.com/ettoday/realtime",
+      "officialWeight": 40
+    },
+    {
+      "id": "newtalk-realtime",
+      "name": "Newtalk 即時",
+      "homepage": "https://newtalk.tw/news/summary/all",
+      "feedUrl": "https://newtalk.tw/rss/all/",
+      "officialWeight": 38
+    },
+    {
+      "id": "google-news-tw",
+      "name": "Google 新聞台灣焦點",
+      "homepage": "https://news.google.com/home?hl=zh-TW&gl=TW&ceid=TW:zh-Hant",
+      "feedUrl": "https://news.google.com/rss?hl=zh-TW&gl=TW&ceid=TW:zh-Hant",
+      "officialWeight": 32
+    },
+    {
+      "id": "setn-realtime",
+      "name": "三立新聞網即時",
+      "homepage": "https://www.setn.com/ViewAll.aspx",
+      "officialWeight": 38
+    },
+    {
+      "id": "tvbs-realtime",
+      "name": "TVBS 即時",
+      "homepage": "https://news.tvbs.com.tw/realtime",
+      "feedUrl": "https://news.tvbs.com.tw/web_api/play_feed_realtime",
+      "officialWeight": 38
+    },
+    {
+      "id": "ebc-realtime",
+      "name": "東森新聞即時",
+      "homepage": "https://news.ebc.net.tw/realtime",
+      "officialWeight": 36
+    },
+    {
+      "id": "ftv-realtime",
+      "name": "民視新聞即時",
+      "homepage": "https://www.ftvnews.com.tw/realtime",
+      "officialWeight": 36
+    },
+    {
+      "id": "cts-realtime",
+      "name": "華視新聞即時",
+      "homepage": "https://news.cts.com.tw/",
+      "officialWeight": 36
+    },
+    {
+      "id": "mnews-realtime",
+      "name": "鏡新聞即時",
+      "homepage": "https://www.mnews.tw/",
+      "officialWeight": 36
+    },
+    {
+      "id": "nextapple-realtime",
+      "name": "壹蘋新聞網即時",
+      "homepage": "https://news.nextapple.com/realtime/latest",
+      "feedUrl": "https://news.nextapple.com/api/rss/category/latest",
+      "officialWeight": 36
+    },
+    {
+      "id": "yahoo-news-tw",
+      "name": "Yahoo 新聞",
+      "homepage": "https://tw.news.yahoo.com/",
+      "feedUrl": "https://tw.news.yahoo.com/rss/",
+      "officialWeight": 30
+    },
+    {
+      "id": "chinatimes-realtime",
+      "name": "中時新聞網即時",
+      "homepage": "https://www.chinatimes.com/realtimenews/",
+      "officialWeight": 36
+    },
+    {
+      "id": "cti-news",
+      "name": "中天新聞",
+      "homepage": "https://ctinews.com/",
+      "feedUrl": "https://ctinews.com/rss/google-news.xml",
+      "officialWeight": 34
+    },
+    {
+      "id": "china-times-paper",
+      "name": "中國時報",
+      "homepage": "https://www.chinatimes.com/newspapers/2601",
+      "officialWeight": 34
+    }
+  ]
+}

@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>台灣即時新聞情報 Agent</title>
+    <link rel="stylesheet" href="/styles.css">
+  </head>
+  <body>
+    <header class="topbar">
+      <div>
+        <p class="eyebrow">Newsroom Social Monitor</p>
+        <h1>台灣即時新聞情報 Agent</h1>
+      </div>
+      <div class="actions">
+        <button id="refreshButton" class="primary-button" type="button">
+          <span class="button-icon">↻</span>
+          重新刷新
+        </button>
+      </div>
+    </header>
+
+    <main class="layout">
+      <section class="workspace">
+        <div class="stats-grid" id="statsGrid"></div>
+
+        <section class="panel filters-panel" aria-label="篩選工具">
+          <div class="filter-row">
+            <label>
+              分數
+              <select id="priorityFilter">
+                <option value="all">全部</option>
+                <option value="high">高優先</option>
+                <option value="watch">值得留意</option>
+                <option value="low">低優先</option>
+              </select>
+            </label>
+            <label>
+              來源
+              <select id="sourceFilter">
+                <option value="all">全部來源</option>
+              </select>
+            </label>
+            <label>
+              排序
+              <select id="sortMode">
+                <option value="score">分數高到低</option>
+                <option value="time">時間新到舊</option>
+              </select>
+            </label>
+            <label class="search-label">
+              搜尋
+              <input id="searchInput" type="search" placeholder="關鍵字、來源、分類">
+            </label>
+          </div>
+        </section>
+
+        <section class="panel source-panel">
+          <div class="panel-heading">
+            <h2>來源狀態</h2>
+            <span id="lastUpdated">尚未刷新</span>
+          </div>
+          <div id="sourceStatuses" class="source-list"></div>
+        </section>
+
+        <section class="panel news-panel">
+          <div class="panel-heading">
+            <h2>即時新聞清單</h2>
+            <span id="itemCount">0 則</span>
+          </div>
+          <div id="newsList" class="news-list"></div>
+        </section>
+      </section>
+
+      <aside class="report-panel">
+        <div class="panel-heading">
+          <h2>今日新聞監控簡報</h2>
+          <button id="copyReportButton" class="ghost-button" type="button">複製</button>
+        </div>
+        <pre id="reportOutput">尚未產生簡報。按下重新刷新開始抓取台灣即時新聞來源。</pre>
+      </aside>
+    </main>
+
+    <div id="toast" class="toast" role="status" aria-live="polite"></div>
+    <script src="/app.js" type="module"></script>
+  </body>
+</html>

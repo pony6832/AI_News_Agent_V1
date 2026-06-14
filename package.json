@@ -1,0 +1,11 @@
+{
+  "name": "ai-news-agent-v1",
+  "version": "1.0.0",
+  "description": "Local Taiwan real-time news intelligence dashboard for newsroom social monitoring.",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "node server.js",
+    "refresh": "node scripts/refresh.js"
+  }
+}
